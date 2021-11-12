@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>minggu 3</title>
+</head>
+<body id="dabode">
+	<p>color&emsp;: 
+		<select id="warna" onchange="theme()" name="color">
+            <option selected="selected" value="white">white</option>
+			<option value="blue">blue</option>
+			<option value="black">black</option>
+		</select>
+	</p>
+    <h1>This is my Website</h1>
+    <p>
+        Select the weather type today : 
+        <select name="weather" onchange="cuaca()" id="cuaca">
+            <option value="1" selected> Sunny</option>
+            <option value="2">Rainy</option>
+        </select>
+        <p id="textcuaca">It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream</p>
+    </p>
+    <div>
+        <input type="text" id="angkafaktorial">
+        <button onclick="factorial()">Get Factorial</button>
+        <p id="hasilfaktorial"></p>
+    </div>
+   
+	<script type="text/javascript">
+        document.getElementById('warna').value = 'white'
+        document.getElementById("cuaca").value =1
+        document.getElementById("angkafaktorial").value = ""
+
+		function theme(){
+            var select = document.getElementById('warna').value
+            var ganti = document.getElementById('dabode')
+            ganti.style.backgroundColor = select
+            if (ganti.style.backgroundColor == "black"){
+                ganti.style.color = "white";
+            }  
+            else{
+                ganti.style.color = "black";
+            }    
+		}
+
+        function cuaca(){
+            var getcuaca = document.getElementById("cuaca").value
+            var text = document.getElementById("textcuaca")
+            if(getcuaca == 1){
+                text.innerHTML = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream"
+            }
+            else {
+                text.innerHTML = "Rain is falling outside. Take a rain coat and a brolly, and don't stay out for too long."
+            }
+        }
+
+        function factorial(){
+            var input_num = document.getElementById("angkafaktorial").value
+            var hasil = document.getElementById("hasilfaktorial")
+            var sum = 1
+            for (var i = input_num; i > 0;i--){
+                sum = sum * i;
+            }
+            
+            hasil.innerHTML = "The factorial of " + input_num + " is " + sum
+        }
+
+	</script>
+</body>
+</html>
