@@ -1,0 +1,80 @@
+body{
+    background-color: #F8F4EC;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.card{
+    width: 60%;
+    margin: auto;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card button{
+    background-color: thistle;
+}
+.inputan{
+    margin-right: 100px;
+}
+.judul{
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+}
+.judul-isi{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.judul-isi p{
+    margin-top: 0px;
+}
+.gambar{
+    width: 170px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+.gambar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.inputbuah{
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+.tambah{
+    height: 20px;
+    position: relative;
+    margin-right: -10px;
+}
+.kurang{
+    height: 20px;
+    position: relative;
+    margin-left: -10px;
+}
+.bottom{
+    width: 59%;
+    justify-content: right;
+    display: flex;
+    margin: auto;
+}
+.bottom p{
+    margin-right: 50px;
+}
+
+#keranjang{
+width: 150px;
+border-radius: 10px;
+}
